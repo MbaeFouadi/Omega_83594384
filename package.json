@@ -1,0 +1,25 @@
+{
+  "name": "km-admin",
+  "version": "1.0.0",
+  "description": "A simple Bootstrap admin template",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "admin",
+    "simple",
+    "template",
+    "bootstrap",
+    "km",
+    "comoros"
+  ],
+  "author": "Linkhousni",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.6",
+    "simple-line-icons": "^2.4.1"
+  }
+}

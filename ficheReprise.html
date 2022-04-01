@@ -1,0 +1,163 @@
+<?php
+session_start();
+include('connexion.php');
+$d=date(Y);
+$dd=$d+1
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome - Université des Comores</title>
+    <link rel="shortcut icon" href="./assets/img/udc.png">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/css.css">
+</head>
+<body>
+        
+    <section class="main-wrapper">
+        <aside class="left-aside">
+            <div class="fontLogo"> 
+                <div class="img-rd">
+                    <img src="./assets/img/udc.png" alt="profile image">
+                </div>
+                <h6 class="m-3 text-center"><strong class="titre"> Université des Comores</strong></h6>
+                <hr>
+            </div>
+            <nav class="nav-aside">
+                <ul class="nav-items">
+                    <li><a href="#"><i class="icon-user"></i> &nbsp; <span class="nav-item-text">Mon profil</span></a></li>
+                    <li>
+                            <a data-toggle="collapse" href="#collapseMenu1" role="button" aria-expanded="false" aria-controls="collapseMenu1"><i class="icon-pencil"></i> &nbsp; <span class="nav-item-text">Inscrire un etudiant </span></a>
+                            <ul class="menu-dd collapse" id="collapseMenu1">
+                                <li><a href=""><i class="icon-note"></i> &nbsp; Préinscription</a></li>
+                                <li><a href=""><i class="icon-note"></i> &nbsp;Inscription</a></li>
+                            </ul>
+                        </li>
+                    <li><a href="#"><i class="icon-people"></i> &nbsp; <span class="nav-item-text">Utilisateurs</span></a></li>
+                    <li><a href="#"><i class="icon-grid"></i> &nbsp; <span class="nav-item-text">Tableau de bord</span></a></li>
+                    <li><a href="#"><i class="icon-settings"></i> &nbsp; <span class="nav-item-text">Gestion Admin</span></a></li>
+                    <li><a href="#"><i class="icon-folder-alt"></i> &nbsp; <span class="nav-item-text">Resultats</span></a></li>
+                    <li>
+                        <a data-toggle="collapse" href="#collapseMenu1" role="button" aria-expanded="false" aria-controls="collapseMenu1"><i class="icon-direction"></i> &nbsp; <span class="nav-item-text">Admission</span></a>
+                        <ul class="menu-dd collapse" id="collapseMenu1">
+                            <li><a href=""><i class="icon-doc"></i> &nbsp; Ecole / Institut</a></li>
+                            <li><a href=""><i class="icon-doc"></i> &nbsp; Faculté</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="icon-notebook"></i> &nbsp; <span class="nav-item-text">Scolarité</span></a></li>
+                    <li><a href="#"><i class="icon-info"></i> &nbsp; <span class="nav-item-text">Renseignements</span></a></li>
+                    <li>
+                        <a data-toggle="collapse" href="#collapseMenu2" role="button" aria-expanded="false" aria-controls="collapseMenu2"><i class="icon-graph"></i> &nbsp; <span class="nav-item-text">Statistiques</span></a>
+                        <ul class="menu-dd collapse" id="collapseMenu2">
+                            <li><a href=""><i class="icon-doc"></i> &nbsp; Nombre de préinscrits</a></li>
+                            <li><a href=""><i class="icon-doc"></i> &nbsp; Nomre total des inscrits</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="icon-logout"></i> &nbsp; <span class="nav-item-text">Déconnexion</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            
+            <!-- <div class="col-md3">
+                <div class="img-rd1">
+                <img class="float-left" src="./assets/img/udc.png" alt="profile image">
+
+            </div> -->
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="./assets/img/logo.bmp" alt="profile image" height="100%" width="100%">
+                    </div>
+                    <div  align="center" class="col-md-9">
+                        <h6><strong>UNION DES COMORES</strong></h6>
+                       <em>Unité-Solidarité-Dévéloppement</em> 
+                       <div>...................</div>
+                       <h5>MINISTRE DE L'EDUCATION NATIONALE<br>
+                            DE L'ENSEIGNEMENT ET DE LA RECHECHERCHE
+                       </h5>
+                      
+                       <strong>.............................</strong>
+                       <h4><strong>UNIVERSITE DES COMORES</em></h4>
+                        
+                   
+
+                    </div>
+                </div>
+                <div class="row" style="margin-top:50px">
+                    <div class="col-md-4">
+                            
+                    </div>
+                    <div align="center" class="col-md-8" >
+                        <h5>DIRECTION DES ETUDES ET DE LA SCOLARITE</h5> 
+                        <strong>.............................</strong><br>
+                        B.P:2585 MORONI <br><br>
+                        <h4> <strong>Fiche de Reprise<br>(Année <?php echo $d."-".$dd ?>)</strong></h4>
+                        
+                        
+                        
+                    </div>
+                            
+
+                </div>
+                
+
+                    <div style="margin-top:50px">
+                        <h5>Nom et prenom:</h5>
+                        <h5>Date et lieu de naissance: </h5>
+                        <h5>Matricule: </h5>
+                        <h5>Serie et année d obtention du bac: </h5>
+                        <h5> departement d'origine: </h5>
+                        <h5>Niveau d'arret </h5>
+                        <h5>Niveau et departement demandé: </h5>
+                        <h5 style="margin-bottom:200px">raison d'arret et celle du reprise: </h5>
+                        <div style="margin-left:550px">
+                                <h5>Moroni, le :</h5>
+                                <h5 style="margin-bottom:80px">Signature de l'etudiant:</h5>
+                        </div>
+                        <div class="border-top"></div>
+                       
+                       
+                        <div class="row" style="margin-top:0px;margin-bottom:100px">
+                                <div class="col-md-6">
+                                        Avis du chef de département d'origine
+                                </div>
+                                <div class="col-md-6" style="margin-right:0px" >
+                                        Avis du chef de département demandé
+                                    
+                                </div>
+                                        
+            
+                            </div>
+                            <h6 align="center" style="margin-bottom:100px">Visa du Directeur des Etudes et de la Scolarité</h6>
+                        
+                        <h6  style="margin-bottom:50px"><strong>Piéces à fournir:<br>-photocopie du relevé des notes annuel</strong></h6>
+                        <div class="border-top"></div>
+                        <div align="center" style="margin-top:10px;">
+                            <h6>
+                                    Clamer que le chemin est long ne le raccourcit pas le raccourcir c est faire un pas en avant.<br>
+                                    Udombowandziaya ke yishashiha yowushashiha hawurenga wusoni<br>
+                                    <strong>Université des Comores, rue de la Corniche BP 2585 Moroni - Tél : +269 763 24 01</strong>
+                            </h6>
+                        </div>
+                        
+                     </div>
+        </div>
+                    
+                
+    </div>
+</main>
+</section>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

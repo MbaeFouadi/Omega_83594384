@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Connexion - Université des Comores</title>
+    <link rel="shortcut icon" href="./assets/img/udc.png">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <section class="main-section">
+        <div class="front-bg"></div>
+            <div class="connect-box">
+                <div class="img-rd">
+                    <img src="./assets/img/udc.png" alt="profile image">
+                </div>
+                <h5 class="cb-name">Université des Comores</h5>
+                <form action="#">
+                    <label for="inputMode" class="sr-only">Mode</label>
+                    <select id="inputMode" required>
+                        <option value="0">Agent DES</option>
+                        <option value="1">Agent de surface</option>
+                        <option value="2">Surveillant Général</option>
+                    </select>
+
+                    <label for="inputUsername" class="sr-only">Nom d'utilisateur</label>
+                    <input type="text" id="inputUsername" placeholder="Nom d'utilisateur" required>
+                    
+                    <div class="g-input">
+                        <label for="inputPass" class="sr-only">Mot de passe</label>
+                        <input type="password" id="inputPass" placeholder="Mot de passe" required>
+                        <button class="submit-arrow" type="submit"><i class="icon-arrow-right-circle"></i></button>
+                    </div>
+                </form>
+            </div>
+    </section>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

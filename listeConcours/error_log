@@ -1,0 +1,10 @@
+[29-Oct-2021 11:52:55 Africa/Casablanca] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/udc/public_html/omega/listeConcours/habitatGif.php on line 486
+[29-Oct-2021 11:54:19 Africa/Casablanca] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/udc/public_html/omega/listeConcours/habitatGif.php on line 486
+[29-Oct-2021 11:58:51 Africa/Casablanca] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/udc/public_html/omega/listeConcours/ComGeaSiSoFp.php on line 454
+[29-Oct-2021 12:01:47 Africa/Casablanca] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/udc/public_html/omega/listeConcours/ComGeaSiSoFp.php on line 454
+[29-Oct-2021 12:06:17 Africa/Casablanca] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/udc/public_html/omega/listeConcours/ComGeaSiSoFp.php on line 454
+[17-Nov-2021 08:21:48 Africa/Casablanca] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/udc/public_html/omega/listeConcours/HabitatGifA.php on line 270
+[17-Nov-2021 08:27:01 Africa/Casablanca] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/udc/public_html/omega/listeConcours/HabitatGifA.php on line 270
+[17-Nov-2021 08:28:33 Africa/Casablanca] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/udc/public_html/omega/listeConcours/HabitatGifA.php on line 270
+[17-Nov-2021 08:29:42 Africa/Casablanca] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/udc/public_html/omega/listeConcours/HabitatGifA.php on line 270
+[19-Nov-2021 11:31:11 Africa/Casablanca] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/udc/public_html/omega/listeConcours/ComGeaSiSoFpA.php on line 243

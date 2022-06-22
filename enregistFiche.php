@@ -4,8 +4,8 @@ if(isset($_SESSION['login']) and ($_SESSION['cat']=="1" or $_SESSION['cat']=="6"
 include('connexion.php');
 $r="SELECT  date_fin FROM date_fin WHERE type=1 order by id_date DESC";
 
-$datedebu=mysqli_query($link,"SELECT * FROM date_debut WHERE type=2 ORDER BY id_date_debut DESC");
-$datedeb=mysqli_fetch_array($datedebu);
+// $datedebu=mysqli_query($link,"SELECT * FROM date_debut WHERE type=2 ORDER BY id_date_debut DESC");
+// $datedeb=mysqli_fetch_array($datedebu);
 
  //parcourir les données de la table date_fin    
  $req = mysqli_query($link,$r);
@@ -13,17 +13,17 @@ $datedeb=mysqli_fetch_array($datedebu);
  $dateJ=date('Y-m-d');
 
  //Verification de la date de prinscription
- if($data['date_fin'] < $dateJ){ ?>
+ /*if($data['date_fin'] < $dateJ){ ?>
      <h3 align="center" style="font-family:arial;margin-top:20%;">D&eacute;sol&eacute;, les préinscriptions sont d&eacute;ja ferm&eacute;es, ou n'ont pas encore debuté !<br> Cliquez<a href="userInterface.php">  ici  </a> pour retourner &agrave; la page d accueil ! </h3>
      <?php }elseif($datedeb['date_debut']> $dateJ) {?>
          <h3 align="center" style="font-family:arial;margin-top:20%;">D&eacute;sol&eacute;, les préinscriptions ne sont pas encore debuté<br> Cliquez<a href="userInterface.php">  ici  </a> pour retourner &agrave; la page d accueil ! </h3>
     <?php }
 
-     else{
+     else{*/
 if(isset($_GET['id_type'])){
     $_SESSION['id_type']=$_GET['id_type'];
-    $type=$_SESSION['id_type'];
-}
+    // $type=$_SESSION['id_type'];
+
 
 $message="";
 $ann=mysqli_query($link,"SELECT * FROM annee ORDER BY id_annee DESC");
@@ -79,7 +79,7 @@ $resultat1 = mysqli_query($link,$sql);
 
 if(mysqli_num_rows($resultat1)>0)
 {
-    $rep = mysqli_query($link,"UPDATE candidats SET annee='".$annee."',mention='".$mention."',serie='".$serie."',centre='".$centre."'where nin='".$nin."'");
+    // $rep = mysqli_query($link,"UPDATE candidats SET annee='".$annee."',mention='".$mention."',serie='".$serie."',centre='".$centre."'where nin='".$nin."'");
   
     $_SESSION['nin']=$nin;
     
@@ -163,7 +163,7 @@ if(mysqli_num_rows($resultat1)>0)
             </div>
             <div class="row">
                 <div class="col-12">
-                    <form action="enregistFiche.php" method="POST">
+                    <form action="#" method="POST">
                     <div class="form-row">
                         <div class="form-group col-md-4">
                         </div>

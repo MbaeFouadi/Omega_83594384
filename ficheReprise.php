@@ -10,7 +10,7 @@ $r="SELECT  date_fin FROM date_fin order by id_date DESC";
 
     $req = mysqli_query($link,$r);
     $dat=mysqli_fetch_array($req);
-$d=date(Y);
+$d=date('Y');
 $dd=$d+1;
 
 $req=mysqli_query($link,"SELECT * FROM candidats,etudiant WHERE candidats.nin=etudiant.NIN and candidats.nin='".$_SESSION['nin']."'");

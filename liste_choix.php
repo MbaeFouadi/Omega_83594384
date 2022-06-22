@@ -139,7 +139,7 @@ $type=$_SESSION['id_type'];
                             </div><br>
                         </div>
                         </div>
-                        <?php } elseif($type==3 || $type==2 || $type==4 || $type==5){
+                        <?php } elseif($type==3 || $type==2 || $type==41 || $type==42 || $type==43  || $type==51 || $type==52 || $type==53 || $type==56 || $type==57){
                             $p = mysqli_query($link,"SELECT * FROM faculte where code_facult ='".$_SESSION['faculte1']."'");
                             $data = mysqli_fetch_array($p);
                             $p3 = mysqli_query($link,"SELECT * FROM departement where code_depart='".$_SESSION['departement'] ."'");

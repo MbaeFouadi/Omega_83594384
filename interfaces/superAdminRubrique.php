@@ -142,6 +142,7 @@
                                 <li><a href="concoursOuNon.php?id_type=5"><i class="icon-note"></i> &nbsp; Reprise</a></li>
                             </ul>
                  </li>
+                 
                  <li>
                  <!--liste d'inscription-->
                  <a data-toggle="collapse" href="#collapseMenu13" role="button" aria-expanded="false" aria-controls="collapseMenu13"><i class=""></i> &nbsp; <span class="nav-item-text">Inscriptions</span></a>

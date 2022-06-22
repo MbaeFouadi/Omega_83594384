@@ -4,9 +4,9 @@ if(isset($_SESSION['login']) and ($_SESSION['cat']=="1" or $_SESSION['cat']=="6"
 include('connexion.php');
 $r="SELECT  date_fin FROM date_fin where type=1 order by id_date DESC";
 
-    $req = mysqli_query($link,$r);
-    $datedebu=mysqli_query($link,"SELECT * FROM date_debut WHERE type=2 ORDER BY id_date_debut DESC");
-    $datedeb=mysqli_fetch_array($datedebu);
+    // $req = mysqli_query($link,$r);
+    // $datedebu=mysqli_query($link,"SELECT * FROM date_debut WHERE type=2 ORDER BY id_date_debut DESC");
+    // $datedeb=mysqli_fetch_array($datedebu);
  
      //parcourir les données de la table date_fin    
      $req = mysqli_query($link,$r);
@@ -16,7 +16,7 @@ $r="SELECT  date_fin FROM date_fin where type=1 order by id_date DESC";
      //Verification de la date de prinscription
      if($data['date_fin'] < $dateJ){ ?>
          <h3 align="center" style="font-family:arial;margin-top:20%;">D&eacute;sol&eacute;, les préinscriptions sont d&eacute;ja ferm&eacute;es, ou n'ont pas encore debuté !<br> Cliquez<a href="userInterface.php">  ici  </a> pour retourner &agrave; la page d accueil ! </h3>
-         <?php }elseif($datedeb['date_debut']> $dateJ) {?>
+         
              <h3 align="center" style="font-family:arial;margin-top:20%;">D&eacute;sol&eacute;, les préinscriptions ne sont pas encore debuté<br> Cliquez<a href="userInterface.php">  ici  </a> pour retourner &agrave; la page d accueil ! </h3>
         <?php }
  
@@ -28,7 +28,7 @@ $dateJ=date('Y-m-d');
 
 if(isset($_GET['id_type'])){
     $_SESSION['id_type']=$_GET['id_type'];
-    $type=$_SESSION['id_type'];
+    // $type=$_SESSION['id_type'];
 }
 if(isset($_POST["valider"])){
     $matricule = $_POST["matricule"];

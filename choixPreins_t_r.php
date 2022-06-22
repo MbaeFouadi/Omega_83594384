@@ -6,7 +6,7 @@ if(!isset($_SESSION['login'])){
 }
 elseif(isset($_SESSION['login']) and ( $_SESSION['cat']=="1" or $_SESSION['cat']=="6"  or $_SESSION['cat']=="5" )){
 include('connexion.php');
-if($_SESSION['choix']==5){
+if($_SESSION['choix']==51 || $_SESSION['choix']==52 || $_SESSION['choix']==53 || $_SESSION['choix']==56 || $_SESSION['choix']==57){
    $req =mysqli_query($link,"UPDATE candidats SET statut='2' where num_recu='".$_SESSION['recu']."'");
    if(mysqli_affected_rows($link)>0){
     $message="ok"; 
@@ -24,7 +24,7 @@ if($_SESSION['choix']==5){
     }else{
         $message="not ok";
     }
-}else if($_SESSION['choix']==4){
+}else if($_SESSION['choix']==41 || $_SESSION['choix']==42 || $_SESSION['choix']==43){
     $req =mysqli_query($link,"UPDATE candidats SET statut='2' where num_recu='".$_SESSION['recu']."'");
     if(mysqli_affected_rows($link)>0){
         unset($_SESSION['recu']);

@@ -51,7 +51,7 @@ if(isset($_POST['submit'])){
                      $_SESSION['nin']=$data['nin'];
                      $_SESSION['choix']=$data['id_type'];
                      $s=1;
-                     if($_SESSION['choix']==4 || $_SESSION['choix']==5){
+                     if($_SESSION['choix']==41 || $_SESSION['choix']==42 || $_SESSION['choix']==43 || $_SESSION['choix']==51 || $_SESSION['choix']==52 || $_SESSION['choix']==53 || $_SESSION['choix']==56 || $_SESSION['choix']==57){
                         header('location: choixPreins_t_r.php');
                      }else{
                         header('location: choixPreins.php');

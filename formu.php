@@ -238,7 +238,7 @@ if(isset($_POST['valider'])){
                 </form>
             </div>
         </div>
-                <?php }elseif($type==3 || $type==2 || $type==4 || $type==5) {?> 
+                <?php }elseif($type==3 || $type==2 || $type==41 || $type==42 || $type==43 || $type==51 || $type==52 || $type==53 || $type==56 || $type==57) {?> 
                     <div class="row">
     <div class="col-12">
         <form action="formu.php" method="POST">

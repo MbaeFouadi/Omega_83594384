@@ -202,7 +202,7 @@ if($_SESSION['tipe']==1){
 }
 
 
-if($_SESSION['tipe']==2 || $_SESSION['tipe']==5){
+if($_SESSION['tipe']==2 || $_SESSION['tipe']==51 || $_SESSION['tipe']==52 || $_SESSION['tipe']==53 || $_SESSION['tipe']==56 || $_SESSION['tipe']==57){
   
     
     switch ($_POST['option']) {
@@ -333,7 +333,7 @@ if($_SESSION['tipe']==2 || $_SESSION['tipe']==5){
       }
     }
 
-    if($_SESSION['tipe']==4){
+    if($_SESSION['tipe']==41 || $_SESSION['tipe']==42 || $_SESSION['tipe']==43  ){
       
         
         switch ($_POST['option']) {

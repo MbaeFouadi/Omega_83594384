@@ -116,7 +116,7 @@ $aa = $dd."-".$d;
             $hol=mysqli_query($link,"SELECT * FROM holo where reference='$reference'");
             $holo=mysqli_fetch_array($hol);
             $reference_id=$holo['id'];
-        $req=mysqli_query($link,"INSERT INTO candidats (nin,nom,date_naiss,lieu_naiss,prenom,datePrescript,id_type,reference_id,traitant_recu,statut,serie,mention,annee,tel_mobile,sexe) values ('$n','$nom','$naiss','$lieu_naiss','$prenom','$dateJ','5','$reference_id','".$_SESSION['login']."','1','$serie','$ment','$annee','$telm','$sexe')");
+        $req=mysqli_query($link,"INSERT INTO candidats (nin,nom,date_naiss,lieu_naiss,prenom,datePrescript,id_type,reference_id,traitant_recu,statut,serie,mention,annee,tel_mobile,sexe) values ('$n','$nom','$naiss','$lieu_naiss','$prenom','$dateJ','".$_SESSION['id_type']."','$reference_id','".$_SESSION['login']."','1','$serie','$ment','$annee','$telm','$sexe')");
         $d = date("Y");
 
         $dd=$d-1;

@@ -3,7 +3,7 @@ session_start();
 if(isset($_SESSION['login']) and ($_SESSION['cat']=="1")){
     include('connexion.php');
     $r="SELECT date_fin FROM date_fin where type=1 order by id_date DESC";
-    $f="";
+    $f=0;
     $m="";
         $req = mysqli_query($link,$r);
         $dat=mysqli_fetch_array($req);
@@ -47,7 +47,9 @@ if(isset($_SESSION['login']) and ($_SESSION['cat']=="1")){
     if(isset($_POST['sub'])){
         $num_recu=$_SESSION['num_recu'];
         $choix=$_POST['choix'];
-        $req=mysqli_query($link,"UPDATE candidats SET retenu='$choix' WHERE num_recu=$num_recu") or die(mysqli_error($link));
+        $pro=$_POST['pro'];
+
+        $req=mysqli_query($link,"UPDATE candidats SET retenu='$choix',pro='$pro' WHERE num_recu=$num_recu") or die(mysqli_error($link));
         header('location:superAdminRetenu.php');
     }
 ?>
@@ -114,7 +116,7 @@ if(isset($_SESSION['login']) and ($_SESSION['cat']=="1")){
                 <div class="row">
                 <div class="col-12">
             
-                <form action="superAdminRetenu.php" method="post">
+                <form action="#" method="post">
                        
             
             
@@ -148,13 +150,18 @@ if(isset($_SESSION['login']) and ($_SESSION['cat']=="1")){
                                             
                                                 <option value="<?=$data['choix3']?>">Choix3: <?php echo utf8_encode($dar1['design_depart']);?></option>
                                             
-                                    <?php } elseif($type==2 || $type==3 || $type==4 || $type==5){?>
+                                    <?php } elseif($type==2 || $type==3 || $type==41 || $type==42 || $type==43 || $type==51 || $type==52 || $type==53 || $type==56 || $type==57){?>
                                             
                                             <option value="<?=$data['choix1']?>">Choix1: <?php  echo utf8_encode($datas['design_depart']);?></option>
                                             
                                    <?php }?>
 
-                                </select><br>            
+                                </select><br> 
+                                <select name="pro" id="" class="form-control">
+                                    <option value="0">Etudiant</option>
+                                    <option value="1">Autre</option>
+                                </select>   
+                                <br>        
                                 <button type="submit" name="sub" class="btn btn-primary">Modifier</button>
                             </form>
                         </div>
